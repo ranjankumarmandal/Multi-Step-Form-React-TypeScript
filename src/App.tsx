@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+import { useMultistepForm } from './utility/useMultistepForm';
 
 function App() {
+  const { steps, currentStepIndex } = useMultistepForm([]);
   return (
     <div
       style={{
