@@ -14,7 +14,15 @@ function App() {
       }}
     >
       <form>
-        <div></div>
+        <div
+          style={{
+            position: 'absolute',
+            top: '0.5rem',
+            right: '0.5rem',
+          }}
+        >
+          1 / 2
+        </div>
       </form>
     </div>
   );
