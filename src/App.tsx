@@ -12,7 +12,11 @@ function App() {
         borderRadius: '0.5rem',
         fontFamily: 'Arial',
       }}
-    ></div>
+    >
+      <form>
+        <div></div>
+      </form>
+    </div>
   );
 }
 
