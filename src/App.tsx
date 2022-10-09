@@ -3,7 +3,7 @@ import './App.css';
 import { useMultistepForm } from './utility/useMultistepForm';
 
 function App() {
-  const { steps, currentStepIndex } = useMultistepForm([
+  const { steps, currentStepIndex, step } = useMultistepForm([
     <div>One</div>,
     <div>Two</div>,
   ]);
@@ -28,6 +28,7 @@ function App() {
         >
           {currentStepIndex + 1} / {steps.length}
         </div>
+        {step}
       </form>
     </div>
   );
