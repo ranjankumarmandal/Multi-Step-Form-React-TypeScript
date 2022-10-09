@@ -9,4 +9,11 @@ export function useMultistepForm(steps: ReactElement[]) {
       return i + 1;
     });
   };
+
+  const back = () => {
+    setCurrentStateIndex((i) => {
+      if (steps.length <= 0) return 1;
+      return i - 1;
+    });
+  };
 }
