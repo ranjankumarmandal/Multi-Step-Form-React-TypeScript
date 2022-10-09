@@ -3,9 +3,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className='App'>
-      <p>Hello World from root component - App.tsx</p>
-    </div>
+    <div
+      style={{
+        position: 'relative',
+        background: 'white',
+        border: '1px solid black',
+        padding: '1rem',
+        borderRadius: '0.5rem',
+        fontFamily: 'Arial',
+      }}
+    ></div>
   );
 }
 
