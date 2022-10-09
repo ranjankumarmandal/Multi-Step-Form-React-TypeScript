@@ -3,7 +3,10 @@ import './App.css';
 import { useMultistepForm } from './utility/useMultistepForm';
 
 function App() {
-  const { steps, currentStepIndex } = useMultistepForm([]);
+  const { steps, currentStepIndex } = useMultistepForm([
+    <div>One</div>,
+    <div>Two</div>,
+  ]);
   return (
     <div
       style={{
@@ -23,7 +26,7 @@ function App() {
             right: '0.5rem',
           }}
         >
-          1 / 2
+          {currentStepIndex + 1} / {steps.length}
         </div>
       </form>
     </div>
