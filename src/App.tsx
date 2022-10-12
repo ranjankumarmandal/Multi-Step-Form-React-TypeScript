@@ -35,7 +35,7 @@ function App() {
           gap: '0.5rem',
           justifyContent: 'flex-end'
         }}>
-          <button>Back</button>
+          {currentStepIndex !== 0 && <button>Back</button>}
           <button>Next</button>
         </div>
       </form>
