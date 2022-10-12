@@ -3,7 +3,7 @@ import './App.css';
 import { useMultistepForm } from './utility/useMultistepForm';
 
 function App() {
-  const { steps, currentStepIndex, step, back } = useMultistepForm([
+  const { steps, currentStepIndex, step, back, next } = useMultistepForm([
     <div>One</div>,
     <div>Two</div>,
   ]);
@@ -36,7 +36,7 @@ function App() {
           justifyContent: 'flex-end'
         }}>
           {currentStepIndex !== 0 && <button onClick={back}>Back</button>}
-          <button>Next</button>
+          <button onClick={next}>Next</button>
         </div>
       </form>
     </div>
