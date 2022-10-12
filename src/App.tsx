@@ -35,8 +35,8 @@ function App() {
           gap: '0.5rem',
           justifyContent: 'flex-end'
         }}>
-          {currentStepIndex !== 0 && <button onClick={back}>Back</button>}
-          <button onClick={next}>Next</button>
+          {currentStepIndex !== 0 && <button type='button' onClick={back}>Back</button>}
+          <button type='button' onClick={next}>Next</button>
         </div>
       </form>
     </div>
