@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import "./App.css";
 import { useMultistepForm } from "./utility/useMultistepForm";
 import UserForm from "./components/UserForm";
@@ -12,7 +12,7 @@ function App() {
     <AccountForm />,
   ]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
   };
 
