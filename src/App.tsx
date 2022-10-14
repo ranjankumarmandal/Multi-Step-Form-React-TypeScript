@@ -1,4 +1,4 @@
-import React, { FormEvent } from "react";
+import React, { useState, FormEvent } from "react";
 import "./App.css";
 import { useMultistepForm } from "./utility/useMultistepForm";
 import UserForm from "./components/UserForm";
@@ -6,6 +6,20 @@ import AddressForm from "./components/AddressForm";
 import AccountForm from "./components/AccountForm";
 
 function App() {
+  const INITIAL_DATA = {
+    firstName: "",
+    lastName: "",
+    age: "",
+    street: "",
+    city: "",
+    state: "",
+    zip: "",
+    email: "",
+    password: "",
+  };
+
+  const [data, setData] = useState(INITIAL_DATA);
+
   const { steps, currentStepIndex, step, back, next } = useMultistepForm([
     <UserForm />,
     <AddressForm />,
