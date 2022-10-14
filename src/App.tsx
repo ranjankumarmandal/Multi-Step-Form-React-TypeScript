@@ -22,7 +22,7 @@ function App() {
         fontFamily: "Arial",
       }}
     >
-      <form>
+      <form onSubmit={handleSubmit}>
         <div
           style={{
             position: "absolute",
