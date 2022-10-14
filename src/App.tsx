@@ -5,7 +5,7 @@ import UserForm from "./components/UserForm";
 
 function App() {
   const { steps, currentStepIndex, step, back, next } = useMultistepForm([
-    <div>One</div>,
+    <UserForm />,
     <div>Two</div>,
   ]);
   return (
