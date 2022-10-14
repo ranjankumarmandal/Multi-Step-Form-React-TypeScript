@@ -14,6 +14,7 @@ function App() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    next();
   };
 
   return (
