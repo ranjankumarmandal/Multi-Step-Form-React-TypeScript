@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { useMultistepForm } from "./utility/useMultistepForm";
+import UserForm from "./components/UserForm";
 
 function App() {
   const { steps, currentStepIndex, step, back, next } = useMultistepForm([
