@@ -5,6 +5,13 @@ interface formWrapperProps {
   children: ReactNode;
 }
 
-const FormWrapper = ({ title, children }: formWrapperProps) => {};
+const FormWrapper = ({ title, children }: formWrapperProps) => {
+  return (
+    <>
+      <h2>{title}</h2>
+      <div>{children}</div>
+    </>
+  );
+};
 
 export default FormWrapper;
