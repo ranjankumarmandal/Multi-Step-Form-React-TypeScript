@@ -46,7 +46,7 @@ function App() {
               Back
             </button>
           )}
-          <button type="button" onClick={next}>
+          <button type="submit">
             {currentStepIndex === steps.length - 1 ? "Finish" : "Next"}
           </button>
         </div>
