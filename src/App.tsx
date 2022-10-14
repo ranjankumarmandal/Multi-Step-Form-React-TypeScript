@@ -6,7 +6,7 @@ import AddressForm from "./components/AddressForm";
 import AccountForm from "./components/AccountForm";
 
 function App() {
-  const INITIAL_DATA = {
+  const INITIAL_DATA: FormData = {
     firstName: "",
     lastName: "",
     age: "",
