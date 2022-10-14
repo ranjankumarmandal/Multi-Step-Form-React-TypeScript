@@ -5,6 +5,18 @@ import UserForm from "./components/UserForm";
 import AddressForm from "./components/AddressForm";
 import AccountForm from "./components/AccountForm";
 
+interface FormData {
+  firstName: string;
+  lastName: string;
+  age: string;
+  street: string;
+  city: string;
+  state: string;
+  zip: string;
+  email: string;
+  password: string;
+}
+
 function App() {
   const INITIAL_DATA: FormData = {
     firstName: "",
