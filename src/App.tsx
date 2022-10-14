@@ -7,7 +7,7 @@ import AddressForm from "./components/AddressForm";
 function App() {
   const { steps, currentStepIndex, step, back, next } = useMultistepForm([
     <UserForm />,
-    <div>Two</div>,
+    <AddressForm />,
   ]);
   return (
     <div
