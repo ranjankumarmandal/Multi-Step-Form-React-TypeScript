@@ -1,5 +1,10 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-const FormWrapper = () => {};
+interface formWrapperProps {
+  title: string;
+  children: ReactNode;
+}
+
+const FormWrapper = ({ title, children }: formWrapperProps) => {};
 
 export default FormWrapper;
