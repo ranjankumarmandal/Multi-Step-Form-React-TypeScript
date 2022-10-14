@@ -16,7 +16,7 @@ const FormWrapper = ({ title, children }: formWrapperProps) => {
           display: "grid",
           gap: "1rem 0.5rem",
           justifyContent: "flex-start",
-          gridTemplateColumns: "auto minmac(auto, 400px)",
+          gridTemplateColumns: "auto minmax(auto, 400px)",
         }}
       >
         {children}
