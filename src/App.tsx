@@ -11,6 +11,9 @@ function App() {
     <AddressForm />,
     <AccountForm />,
   ]);
+
+  const handleSubmit = (e) => {};
+
   return (
     <div
       style={{
