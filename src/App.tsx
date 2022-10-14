@@ -9,6 +9,7 @@ function App() {
   const { steps, currentStepIndex, step, back, next } = useMultistepForm([
     <UserForm />,
     <AddressForm />,
+    <AccountForm />,
   ]);
   return (
     <div
