@@ -33,7 +33,7 @@ function App() {
   const [data, setData] = useState(INITIAL_DATA);
 
   const updateFields = (fields: Partial<FormData>) => {
-    console.log("test");
+    setData((prev) => ({ ...prev, ...fields }));
   };
 
   const { steps, currentStepIndex, step, back, next } = useMultistepForm([
