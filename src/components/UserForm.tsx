@@ -36,7 +36,13 @@ const UserForm = ({
         onChange={(e) => updateFields({ lastName: e.target.value })}
       />
       <label>Age</label>
-      <input required min={1} type="number" value={age} />
+      <input
+        required
+        min={1}
+        type="number"
+        value={age}
+        onChange={(e) => updateFields({ age: e.target.value })}
+      />
     </FormWrapper>
   );
 };
