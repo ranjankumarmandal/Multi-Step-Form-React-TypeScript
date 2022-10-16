@@ -7,7 +7,12 @@ interface UserFormProps {
   age: string;
 }
 
-const UserForm = ({ firstName, lastName, age }: UserFormProps) => {
+const UserForm = ({
+  firstName,
+  lastName,
+  age,
+  updateFields,
+}: UserFormProps) => {
   return (
     <FormWrapper title="User Details">
       <label>First Name</label>
