@@ -8,7 +8,7 @@ interface BasicProps {
 }
 
 interface UserFormProps extends BasicProps {
-  updateFields: (fields: BasicProps) => void;
+  updateFields: (fields: Partial<BasicProps>) => void;
 }
 
 const UserForm = ({
@@ -20,7 +20,13 @@ const UserForm = ({
   return (
     <FormWrapper title="User Details">
       <label>First Name</label>
-      <input autoFocus required type="text" value={firstName} />
+      <input
+        autoFocus
+        required
+        type="text"
+        value={firstName}
+        onChange={(e) => updateFields({ firstName: e.target.value })}
+      />
       <label>Last Name</label>
       <input autoFocus required type="text" value={lastName} />
       <label>Age</label>
