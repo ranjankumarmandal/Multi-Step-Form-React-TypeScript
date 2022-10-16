@@ -22,13 +22,19 @@ const AddressForm = ({
   return (
     <FormWrapper title="Address">
       <label>Street</label>
-      <input autoFocus required type="text" />
+      <input
+        autoFocus
+        required
+        type="text"
+        value={street}
+        onChange={(e) => updateFields({ street: e.target.value })}
+      />
       <label>City</label>
-      <input autoFocus required type="text" />
+      <input autoFocus required type="text" value={city} />
       <label>State</label>
-      <input autoFocus required type="text" />
+      <input autoFocus required type="text" value={state} />
       <label>Zip</label>
-      <input required type="text" />
+      <input required type="text" value={zip} />
     </FormWrapper>
   );
 };
