@@ -37,9 +37,9 @@ function App() {
   };
 
   const { steps, currentStepIndex, step, back, next } = useMultistepForm([
-    <UserForm {...data} />,
-    <AddressForm {...data} />,
-    <AccountForm {...data} />,
+    <UserForm {...data} updateFields={updateFields} />,
+    <AddressForm {...data} updateFields={updateFields} />,
+    <AccountForm {...data} updateFields={updateFields} />,
   ]);
 
   const handleSubmit = (e: FormEvent) => {
