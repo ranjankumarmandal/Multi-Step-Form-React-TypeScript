@@ -10,7 +10,7 @@ interface AccountFormProps extends BasicProps {
   updateFields: (fields: Partial<BasicProps>) => void;
 }
 
-const AccountForm = () => {
+const AccountForm = ({ email, password, updateFields }: AccountFormProps) => {
   return (
     <FormWrapper title="Account Creation">
       <label>Email</label>
