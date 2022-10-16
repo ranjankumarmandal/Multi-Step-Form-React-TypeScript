@@ -58,6 +58,7 @@ function App() {
         padding: "1rem",
         borderRadius: "0.5rem",
         fontFamily: "Arial",
+        maxWidth: "max-content",
       }}
     >
       <form onSubmit={handleSubmit}>
