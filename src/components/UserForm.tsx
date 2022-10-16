@@ -28,7 +28,13 @@ const UserForm = ({
         onChange={(e) => updateFields({ firstName: e.target.value })}
       />
       <label>Last Name</label>
-      <input autoFocus required type="text" value={lastName} />
+      <input
+        autoFocus
+        required
+        type="text"
+        value={lastName}
+        onChange={(e) => updateFields({ lastName: e.target.value })}
+      />
       <label>Age</label>
       <input required min={1} type="number" value={age} />
     </FormWrapper>
