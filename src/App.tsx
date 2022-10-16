@@ -44,7 +44,9 @@ function App() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    next();
+    currentStepIndex !== steps.length - 1
+      ? next()
+      : alert("Successful Account Creation!");
   };
 
   return (
