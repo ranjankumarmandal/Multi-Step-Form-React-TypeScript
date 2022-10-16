@@ -8,11 +8,17 @@ interface BasicProps {
   zip: string;
 }
 
-interface UserFormProps extends BasicProps {
+interface AddressFormProps extends BasicProps {
   updateFields: (fields: Partial<BasicProps>) => void;
 }
 
-const AddressForm = () => {
+const AddressForm = ({
+  street,
+  city,
+  state,
+  zip,
+  updateFields,
+}: AddressFormProps) => {
   return (
     <FormWrapper title="Address">
       <label>Street</label>
