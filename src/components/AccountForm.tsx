@@ -14,9 +14,9 @@ const AccountForm = ({ email, password, updateFields }: AccountFormProps) => {
   return (
     <FormWrapper title="Account Creation">
       <label>Email</label>
-      <input autoFocus required type="email" />
+      <input autoFocus required type="email" value={email} />
       <label>Password</label>
-      <input required type="password" />
+      <input required type="password" value={password} />
     </FormWrapper>
   );
 };
