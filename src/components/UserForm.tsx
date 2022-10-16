@@ -1,7 +1,7 @@
 import React from "react";
 import FormWrapper from "./styled_component/FormWrapper";
 
-const UserForm = () => {
+const UserForm = ({ firstName, lastName, age }: UserFormProps) => {
   return (
     <FormWrapper title="User Details">
       <label>First Name</label>
