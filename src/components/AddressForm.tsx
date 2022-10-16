@@ -1,6 +1,17 @@
 import React from "react";
 import FormWrapper from "./styled_component/FormWrapper";
 
+interface BasicProps {
+  street: string;
+  city: string;
+  state: string;
+  zip: string;
+}
+
+interface UserFormProps extends BasicProps {
+  updateFields: (fields: Partial<BasicProps>) => void;
+}
+
 const AddressForm = () => {
   return (
     <FormWrapper title="Address">
