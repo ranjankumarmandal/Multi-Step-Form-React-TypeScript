@@ -1,10 +1,14 @@
 import React from "react";
 import FormWrapper from "./styled_component/FormWrapper";
 
-interface UserFormProps {
+interface BasicProps {
   firstName: string;
   lastName: string;
   age: string;
+}
+
+interface UserFormProps extends BasicProps {
+  updateFields: (fields: BasicProps) => void;
 }
 
 const UserForm = ({
